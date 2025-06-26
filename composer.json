@@ -1,0 +1,36 @@
+{
+    "name": "cognitas/query-filter",
+    "description": "A Laravel query filter package that applies dynamic filters from request parameters to Eloquent queries.",
+    "homepage": "https://github.com/cognitas-si/query-filter",
+    "type": "library",
+    "license": "MPL-2.0",
+    "keywords": [
+        "laravel",
+        "eloquent",
+        "query",
+        "filter"
+    ],
+    "authors": [
+        {
+            "name": "Martin Res",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Cognitas\\QueryFilter\\": "src/"
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "Cognitas\\QueryFilter\\QueryFilterServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/database": "11.*|12.*",
+        "illuminate/support": "11.*|12.*"
+    }
+}
